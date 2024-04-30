@@ -1,0 +1,12 @@
+body
+{
+    background-color: black;
+}
+.calculator
+{
+    margin: 30% 40% 30% ;
+    background-color: aqua;
+    width: 70%;
+    height: 50%;
+    border: solid 1px chocolate;
+}

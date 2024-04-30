@@ -1,0 +1,87 @@
+<html>
+    <title>
+        Form Validation
+    </title>
+    <head>
+        <script type="text/javascript" src="JavaScript.js"></script>
+    </head>
+    <body>
+        <form onsubmit="return buttonclick()" action="Welcome.html" >
+            
+            <fieldset align="center" ><br><br><b>LOGIN FORM</b><br><br><br></fieldset>
+            <br>
+
+            <label for="name" >Name</label>
+            <input type="text" id="name" placeholder="FirstName">
+            <input type="text" id="lastname" placeholder="LastName">
+
+            <br><br>
+
+            <!-- <br><br> -->
+
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" placeholder="Email">
+
+            <br><br>
+
+            <label for="num">Phone Number</label>
+            <input type="text" name="num" id="num" placeholder="10-digit number">
+
+            <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="password">
+
+            <br><br>
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="gender">Male <br>
+            <input type="radio" name="gender" id="gender">Female <br>
+            <input type="radio" name="gender" id="gender">Not wish to Disclose
+
+            <br><br>
+
+            <label for="add">Address</label><br>
+            <textarea name="add" id="add" cols="30" rows="10"></textarea>
+            
+            <br><br>
+
+            <label for="dob">Date of Birth</label> <br>
+            <input type="date" name="dob" id="dob">
+
+            <br><br>
+
+            <label for="time">CurrentTime</label> <br>
+            <input type="time" name="time" id="time">
+
+            <br><br>
+
+            <label for="lan">Languages</label><br>
+            <input type="checkbox" name="lan" id="lan">Tamil<br>
+            <input type="checkbox" name="lan" id="lan">English <br>
+            <input type="checkbox" name="lan" id="lan">French 
+
+            <br><br>
+
+            <label for="field">Select your field of interest:</label> <br>
+            <select name="field" id="field">
+                <option value="">Select</option>
+                <option value="Music">Music</option>
+                <option value="Football">Football</option>
+                <option value="Cricket">Cricket</option>
+            </select>
+
+            <br><br>
+            
+            <label for="photo">Upload photo</label>
+            <input type="file" name="photo" id="photo">
+
+            <br><br>
+
+            
+            <button type="submit" name="submit" value="Submit">Submit </button>
+            <button type="reset" name="reset" value="Reset">Reset</button>
+
+        </form>
+    </body>
+</html>
