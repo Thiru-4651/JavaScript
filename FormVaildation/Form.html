@@ -3,85 +3,175 @@
         Form Validation
     </title>
     <head>
+        <link rel="stylesheet" href="Style.css">
         <script type="text/javascript" src="JavaScript.js"></script>
     </head>
     <body>
-        <form onsubmit="return buttonclick()" action="Welcome.html" >
+        <div id="form" class="form" >
+
+            <h1>
+                LOGIN Form
+            </h1>
             
-            <fieldset align="center" ><br><br><b>LOGIN FORM</b><br><br><br></fieldset>
-            <br>
-
-            <label for="name" >Name</label>
-            <input type="text" id="name" placeholder="FirstName">
-            <input type="text" id="lastname" placeholder="LastName">
-
-            <br><br>
-
-            <!-- <br><br> -->
-
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail" placeholder="Email">
-
-            <br><br>
-
-            <label for="num">Phone Number</label>
-            <input type="text" name="num" id="num" placeholder="10-digit number">
-
-            <br><br>
-
-            <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass" placeholder="password">
-
-            <br><br>
-
-            <label for="gender">Gender</label><br>
-            <input type="radio" name="gender" id="gender">Male <br>
-            <input type="radio" name="gender" id="gender">Female <br>
-            <input type="radio" name="gender" id="gender">Not wish to Disclose
-
-            <br><br>
-
-            <label for="add">Address</label><br>
-            <textarea name="add" id="add" cols="30" rows="10"></textarea>
+            <form onsubmit="return validate()" >
             
-            <br><br>
 
-            <label for="dob">Date of Birth</label> <br>
-            <input type="date" name="dob" id="dob">
+                <label for="name" >Name</label>
+                <input type="text" id="name" placeholder="FirstName" onfocus="ValidateData()">
+                <input type="text" id="lastname" placeholder="LastName">
+    
+                <br><br>
+    
+                 <br><br> 
+    
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" placeholder="Email">
+    
+                <br><br>
 
-            <br><br>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="password">
+                
+                <br><br>
+    
+                <label for="num">Phone Number</label>
+                <input type="text" name="num" id="num" placeholder="10-digit number">
+               
+                <br><br>
+    
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" id="gender1">Male <br>
+                <input type="radio" name="gender" id="gender2">Female <br>
+                <input type="radio" name="gender" id="gender3">Not wish to Disclose
+    
+                <br><br>
+    
+                <label for="add">Address</label><br>
+                <textarea name="add" id="add" cols="30" rows="10"></textarea>
+                
+                <br><br>
+    
+                <label for="dob">Date of Birth</label> <br>
+                <input type="date" name="dob" id="dob">
+    
+                <br><br>
+    
+                <label for="time">CurrentTime</label> <br>
+                <input type="time" name="time" id="time">
+    
+                <br><br>
+    
+                <label for="lan">Languages</label><br>
+                <input type="checkbox" name="lan" id="lan">Tamil<br>
+                <input type="checkbox" name="lan" id="lan">English <br>
+                <input type="checkbox" name="lan" id="lan">French 
+    
+                <br><br>
+    
+                <label for="field">Select your field of interest:</label> <br>
+                <select name="field" id="field">
+                    <option value="">Select</option>
+                    <option value="Music">Music</option>
+                    <option value="Football">Football</option>
+                    <option value="Cricket">Cricket</option>
+                </select>
+    
+                <br><br>
+                
+                <label for="photo">Upload photo</label>
+                <input type="file" name="photo" id="photo">
+    
+                <br><br>
+                
+                <button type="submit" name="submit" value="Submit">Submit </button>
+                <button type="reset" name="reset" value="Reset">Reset</button>
+    
+            </form>
 
-            <label for="time">CurrentTime</label> <br>
-            <input type="time" name="time" id="time">
+        </div>
 
-            <br><br>
+        <div id="data">
+            <h1>
+                Form Data
+            </h1>
 
-            <label for="lan">Languages</label><br>
-            <input type="checkbox" name="lan" id="lan">Tamil<br>
-            <input type="checkbox" name="lan" id="lan">English <br>
-            <input type="checkbox" name="lan" id="lan">French 
+            <table>
+                <tr>
+                    <th>Section</th>
+                    <th>UserDetails</th>
+                </tr>
 
-            <br><br>
+                <tr>
+                    <th>UserName</th>
+                    <td id="name1">Thirunavukkarasu Dhanapal</td>
+                </tr>
 
-            <label for="field">Select your field of interest:</label> <br>
-            <select name="field" id="field">
-                <option value="">Select</option>
-                <option value="Music">Music</option>
-                <option value="Football">Football</option>
-                <option value="Cricket">Cricket</option>
-            </select>
+                <tr>
+                    <th>Email ID</th>
+                    <td id="mail1">thirucse2002@gmail.com</td>
+                </tr>
+                
+                <tr>
+                    <th>Phone Number</th>
+                    <td id="number1">9894583822</td>
+                </tr>
 
-            <br><br>
-            
-            <label for="photo">Upload photo</label>
-            <input type="file" name="photo" id="photo">
+                <tr>
+                    <th>Password</th>
+                    <td id="password1">**********</td>
+                </tr>
 
-            <br><br>
+                <tr>
+                    <th>Gender</th>
+                    <td id="gender1">Male</td>
+                </tr>
 
-            
-            <button type="submit" name="submit" value="Submit">Submit </button>
-            <button type="reset" name="reset" value="Reset">Reset</button>
+                <tr>
+                    <th>Address</th>
+                    <td id="address1">41/11,VOC Nagar, Cauvery RS,Pallipalayam, Namakal-638007</td>
+                </tr>
 
-        </form>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td id="dob1">12/12/2002</td>
+                </tr>
+
+                <tr>
+                    <th>CurrentTime</th>
+                    <td id="time1">12:12</td>
+                </tr>
+
+                <tr>
+                    <th>Languages</th>
+                    <td id="lang1">
+                        <ul>
+                            <li>Tamil</li>
+                            <li>English</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Field Of Interest</th>
+                    <td id="interest1">
+                        <ul>
+                            <li>Football</li>
+                            <li>Cricket</li>
+                            <li>Music</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Upload your picture</th>
+                    <td>
+                        <img src="C:\Users\ThirunavukkarasuDhan\OneDrive - Syncfusion\Desktop\Images\download.jpg" class="image1">
+                    </td>
+                </tr>
+                
+            </table>
+
+        </div>
+        
     </body>
 </html>

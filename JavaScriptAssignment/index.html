@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="wholecontent">
+        <div>
+            <img src="Image/download.png" class="image">
+            <span>Library Portal</span>
+            <!-- <span class="space"></span> -->
+            <a href="#" class="space">Books</a>
+            <hr class="line">
+        </div>
+        <div class="maincontent">
+
+            <h3>Add New Book</h3>
+
+            <label>Category:</label>
+            <select>
+                <option value="IT">IT</option>
+            </select><br><br>
+
+            <label>Book:</label><input type="text" id="book">
+            <label class="invalidbookname" >Invalid Book Name</label>
+            <br><br>
+
+            <label>Author Email:</label> <input type="email" id="mail"> <br><br>
+
+            <label>Author Name:</label><input type="text" id="name"> 
+            <label class="invalidname">Invalid Name</label>
+            <br><br>
+
+            <label>Published:</label><input type="text" id="published">
+            <br><br>
+
+            <label>Price:</label><input type="text" id="price">
+            <br><br>
+
+            <div>
+  
+                <button value="Save" onclick="save()" >Save</button>
+                <button value="Cancel" onclick="cancel()">Cancel </button>
+                <button type="submit" onclick="show()" id="show" value="Show">Show </button>
+            </div>
+
+        </div>
+
+        <div>
+            <hr class="line">
+            Copyright@2019-presentSyncfusion
+        </div> <br>
+    </div>
+    <br><br>
+    
+    <!-- <div class="wholecontent">
+        <div>
+            <img src="Image/download.png" class="image">
+            <span>Library Portal</span>
+            
+            <a href="#" class="space">Books</a>
+            <hr class="line">
+        </div>
+
+        <div class="maincontent">
+            <h3>Book Details</h3>
+            <label><b>Category</b></label><br><br>
+            <label id="showbookname"><b>Book</b></label><br><br>
+            <label id="Showmail"><b>Author Email</b></label><br><br>
+            <label id="showauthor"><b>Author</b></label><br><br>
+            <label id="showyear"><b>Published</b></label><br><br>
+            <label id="showprice"><b>Price</b></label><br><br>
+        </div>
+
+        <div>
+            <hr class="line">
+            Copyright@2019-presentSyncfusion
+        </div>
+
+    </div> -->
+</body>
+
+</html>
